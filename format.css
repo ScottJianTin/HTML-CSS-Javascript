@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* overflow: hidden; */
+}
+
+body {
+  display: block;
+  justify-content: space-evenly;
+  /* padding: 38px; */
+  background-image: url(photo-1598349327904-6b033b8028b2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: screen;
+}
+
+.back-button a {
+  /* -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button; */
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 30px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: white;
+  background-color: grey;
+  /* border: 20px; */
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  box-shadow: 0 2px rgb(103, 103, 103);
+}
+
+.back-button a:hover {
+  background-color: lightgrey;
+}
+
+.back-button a:active {
+  background-color: grey;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+h1 {
+  /* margin-top: 5px; */
+  text-align: center;
+  /* color: rgb(61, 61, 224); */
+  color: black;
+  font-family: "Redressed", cursive;
+  font-size: 35px;
+  padding: 20px;
+}
+
+h2 {
+  margin-top: 5px;
+  text-align: center;
+  /* color: rgb(61, 61, 224); */
+  color: black;
+  font-family: "Redressed", cursive;
+  font-size: 35px;
+  padding: 10px;
+}
+
+.form-container {
+  width: 100vh;
+  margin: 15px auto;
+}
+
+form {
+  padding: 5% 10% 5% 10%;
+  background-color: rgba(144, 203, 238, 0.514);
+  border-radius: 25px;
+  outline: invert;
+  box-shadow: 0 18px 26px rgba(0, 0, 0, 0.3), 0 12px 28px rgba(0, 0, 0, 0.22);
+}
+
+.inputs > i {
+  min-width: 40px;
+  padding: 15px;
+  background-color: grey;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.inputs:hover > i {
+  background-color: rgb(162, 109, 11);
+}
+
+.inputs {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.inputs > input[type="text"] {
+  outline: none;
+  border: 1px solid black;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  width: 80vh;
+  text-align: center;
+}
+
+.inputs > input[type="text"]:hover {
+  background-color: rgb(247, 216, 182);
+}
+
+.inputs > input[type="password"] {
+  outline: none;
+  border: 1px solid black;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  width: 80vh;
+  text-align: center;
+}
+
+.inputs > input[type="password"]:hover {
+  background-color: rgb(247, 216, 182);
+}
+
+.login > input[type="submit"] {
+  font-size: 15px;
+  display: block;
+  padding: 15px 10px 15px;
+  color: black;
+  cursor: pointer;
+  outline: none;
+  width: 45vh;
+  margin: 20px auto;
+  transition: all 0.2s linear;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.login:hover > input[type="submit"] {
+  background-color: lightsalmon;
+  color: white;
+  border-radius: 10px;
+}
+
+.golden-rule {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 5px;
+}
+
+.remember-me {
+  font-size: 15px;
+  margin: none;
+}
+
+.forget-password a {
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  width: 150px;
+  padding: 10px 5px;
+  margin: none;
+  color: white;
+  background-color: grey;
+  cursor: pointer;
+  font-size: 12px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.forget-password a:hover {
+  background-color: lightgrey;
+  color: white;
+}
+
+h4 {
+  font-family: "Redressed";
+  color: black;
+}
+
+/* The message box is shown when the user clicks on the password field */
+#message {
+  display: none;
+  background: none;
+  color: #000;
+  position: relative;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+#message p {
+  padding: 2px 35px;
+  font-size: 18px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+  color: rgb(174, 254, 146);
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "✔";
+}
+
+/* Add a red text color and an "x" icon when the requirements are wrong */
+.invalid {
+  color: black;
+  font-family: "Redressed";
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "✖";
+}

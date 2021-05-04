@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link href='iconfinder_law_iconsArtboard_1_copy_9_2393042.png' rel='icon'/> 
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="profile.css">
+	<title>SMARTRACT Profile Setting</title>
+</head>
+<body>
+	<div class="form-container">
+		<form action="#" method="get">
+			<div class="back-button">
+				<a href="main-page.html">&#8249;</a>
+			</div>
+			<h2>PROFILE EDIT</h2>
+			<p></p>
+      <div class="inputs">
+				<i class="material-icons" style="font-size:30px">face</i>
+				<input type="text" id="confirm-email" placeholder="Your Name">
+			</div>
+      <div class="inputs">
+				<i class="material-icons" style="font-size:30px">laptop_mac</i>
+				<input type="text" id="confirm-email" placeholder="Company Name">
+			</div>
+			<div class="inputs">
+				<i class="material-icons" style="font-size:30px">phone</i>
+				<input type="text" id="confirm-email" placeholder="Mobile/Phone Number">
+			</div>
+			<div class="inputs">
+				<i class="material-icons" style="font-size:30px">account_circle</i>
+				<input type="text" id="username" placeholder="New Username" />	
+			<p></p>
+			</div>
+			<div class="inputs">
+				<i class="material-icons" style="font-size:30px">email</i>
+				<input type="text" id="email" placeholder="New Email">
+			</div>
+			<div class="inputs">
+				<i class="material-icons" style="font-size:30px">lock</i>
+				<input type="password" id="password" placeholder="New Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required />	
+			</div>
+			<div class="inputs">
+				<i class="material-icons" style="font-size:30px">lock</i>
+				<input type="password" id="confirm-email" placeholder="Reenter Password">
+			</div>
+      
+
+
+			<!--Password validation message-->
+			<div id="message">
+				<h4><span>Password must contain the following:</span></h4>
+				<p id="letter" class="invalid">A lowercase letter</p>
+				<p id="capital" class="invalid">A capital (uppercase) letter</p>
+				<p id="number" class="invalid">A number</p>
+				<p id="length" class="invalid">Minimum 8 characters</p>
+			</div>	
+			<script>
+				var myInput = document.getElementById("password");
+				var letter = document.getElementById("letter");
+				var capital = document.getElementById("capital");
+				var number = document.getElementById("number");
+				var length = document.getElementById("length");
+				
+				// When the user clicks on the password field, show the message box
+				myInput.onfocus = function() {
+					document.getElementById("message").style.display = "block";
+				}
+				
+				// When the user clicks outside of the password field, hide the message box
+				myInput.onblur = function() {
+					document.getElementById("message").style.display = "none";
+				}
+				
+				// When the user starts to type something inside the password field
+				myInput.onkeyup = function() {
+					// Validate lowercase letters
+					var lowerCaseLetters = /[a-z]/g;
+					if(myInput.value.match(lowerCaseLetters)) {
+						letter.classList.remove("invalid");
+						letter.classList.add("valid");
+					} else {
+						letter.classList.remove("valid");
+						letter.classList.add("invalid");
+				}
+				
+					// Validate capital letters
+					var upperCaseLetters = /[A-Z]/g;
+					if(myInput.value.match(upperCaseLetters)) {
+						capital.classList.remove("invalid");
+						capital.classList.add("valid");
+					} else {
+						capital.classList.remove("valid");
+						capital.classList.add("invalid");
+					}
+				
+					// Validate numbers
+					var numbers = /[0-9]/g;
+					if(myInput.value.match(numbers)) {
+						number.classList.remove("invalid");
+						number.classList.add("valid");
+					} else {
+						number.classList.remove("valid");
+						number.classList.add("invalid");
+					}
+				
+					// Validate length
+					if(myInput.value.length >= 8) {
+						length.classList.remove("invalid");
+						length.classList.add("valid");
+					} else {
+						length.classList.remove("valid");
+						length.classList.add("invalid");
+					}
+				}
+			</script>
+      <div class="change">
+        <div class="login">
+          <input type="submit" value="Save Changes" onclick="location.href='main-page.html'"></input>
+        </div>
+        <div class="login">
+          <input type="submit" value="Cancel" onclick="location.href='main-page.html'"></input>
+        </div>
+      </div>
+			<div style="display:none" class="thankyou_message">
+				<h2><em>Changes made!</em></h2>
+			 </div>
+		</form>
+		<div class="success">
+			<p><strong>Success! Changes saved!</strong></p>
+		</div>
+</body>
+</html>
+
+<script>
+	$(function() {
+		$(".change .login > input").click(function(){
+			$(".success").css("display","block").delay(1000).fadeout(400);
+		});
+	});
+</script>
+

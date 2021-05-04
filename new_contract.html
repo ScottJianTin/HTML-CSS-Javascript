@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href='iconfinder_law_iconsArtboard_1_copy_9_2393042.png' rel='icon'/> 
+  <meta charset="UTF-8">
+  <link href='iconfinder_internet-web-browser_79781.png' rel='icon'/> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="new_contract.css">
+  <title>SMARTRACT (New Contract)</title>
+</head>
+<body>
+  <input type="checkbox" id="check">
+  <label for="check">
+    <i class="fas fa-bars" id="btn"></i>
+    <i class="fas fa-times" id="cancel"></i>
+  </label>
+  <div class="sidebar">
+  <header>SMARTRACT</header>
+    <ul>
+      <li><a href="main-page.html"><i class="fas fa-home"></i>Home</a></li>
+      <li><a href="new_contract.html"><i class="fas fa-plus-circle"></i>New Contract</a></li>
+      <li><a href="current_contract.html"><i class="fas fa-folder"></i>Existing Contract</a></li>
+      <li><a href="profile.html"><i class="far fa-user-circle"></i>Account</a></li>
+    </ul>
+  </div>
+  <div class="container">
+    <header>Create New Contract</header>
+    <div class="progress-bar">
+      <div class="step">
+        <p>Details</p>
+        <div class="bullet">
+          <span>1</span>
+        </div>
+        <div class="check fas fa-check"></div>
+      </div>
+      <div class="step">
+        <p>Deliverables</p>  
+        <div class="bullet">
+          <span>2</span>
+        </div>
+        <div class="chcek fas fa-check"></div>
+      </div>
+      <div class="step">
+        <p>Terms</p>
+        <div class="bullet">
+          <span>3</span>
+        </div>
+        <div class="check fas fa-check"></div>
+      </div>
+      <div class="step">
+        <p>Submit</p>
+        <div class="bullet">
+          <span>4</span>
+        </div>
+        <div class="check fas fa-check"></div>
+      </div>
+    </div>
+  <div class="form-outer">
+    <form class="gform" method="post" data-email="scotttang99@gmail.com" action="https://script.google.com/macros/s/AKfycbxDmb2Sn_LZVPqoSih77jhOKszZRDy4AdyITAWsEyM2HBsF070cIIu_DfBKHpGlyQXTYw/exec" autocomplete="off">
+        <div class="page slide-page">
+          <div class="title">Details:</div>
+          <div class="field">
+            <div class="label">Agreement Partner</div>
+            <input type="text" name="partner">
+          </div>
+          <div class="field">
+            <div class="label">Recipient Email</div>
+            <input type="email" name="recipient_email">
+          </div>
+          <div class="field">
+              <div class="label">Contract Name</div>
+              <input type="text" name="contract">
+          </div>
+          <div class="field">
+            <div class="label">Total Cost ($SGD)</div>
+            <input type="Number" name="cost">
+          </div>
+          <div class="field">
+            <div class="label">Start Date</div>
+            <input type="date" name="start_date">
+          </div>
+          <div class="field">
+            <div class="label">Attachments</div>
+            <input type="file" name="attachments" multiple><br><br>
+          </div>
+          <div class="field">
+            <div class="label">Description</div>
+            <textarea id="desc" cols="30" rows="10"  name="description" placeholder="Drag bottom right corner of this box to resize"></textarea>
+          </div>
+          <div class="field" >
+            <button class="firstNext next">Next</button>
+          </div>
+        </div>
+        <div class="page">
+          <div class="title">Deliverables</div>
+          <div class="field">
+            <div class="label"><b><i>(1st) Deliverable</i></b></div>
+            <input type="text" name="deliverable(1)">
+          </div>
+          <div class="field">
+            <div class="label">Percentage (%)</div>
+            <input type="Number" name="pct(1)">
+          </div>
+          <div class="field">
+            <div class="label">Duration (Days)</div>
+            <input type="Number" name="duration(1)">
+          </div>
+          <div class="field">
+            <div class="label"><b><i>(2nd) Deliverable</i></b></div>
+              <input type="text" name="deliverable(2)">
+            </div>
+          <div class="field">
+            <div class="label">Percentage (%)</div>
+            <input type="Number" name="pct(2)">
+          </div>
+          <div class="field">
+            <div class="label">Duration (Days)</div>
+            <input type="Number" name="duration(2)">
+          </div>
+          <div class="field btns">
+            <button class="prev-1 prev">Previous</button>
+            <button class="next-1 next">Next</button>
+          </div>
+        </div>
+        <div class="page">
+          <div class="title">Terms & Condition</div>
+          <div class="field">
+            <div class="label"><b><i>Terms & Condition (1)</i></b></div>
+            <input type="text" name="T&D(1)">
+          </div>
+          <div class="field">
+            <div class="label"><b><i>Terms & Condition (2)</i></b></div>
+            <input type="text" name="T&D(2)">
+          </div>
+          <div class="field">
+            <div class="label"><b><i>Terms & Condition (3)</i></b></div>
+            <input type="text" name="T&D(3)">
+          </div>
+          <div class="field btns">
+            <button class="prev-2 prev">Previous</button>
+            <button class="next-2 next">Next</button>
+          </div>
+        </div>
+        <div class="page">
+          <div class="title">Login Details</div>
+          <div class="field">
+            <div class="label">Username</div>
+              <input type="text">
+          </div>
+          <div class="field">
+            <div class="label">Password</div>
+              <input type="password">
+          </div>
+          <div class="field btns">
+            <button class="prev-3 prev">Previous</button>
+            <button class="submit"onclick="window.location.href = 'main-page.html';">Create</a></button>
+          </div>
+        </div>
+        <div style="display:none" class="feedback_message">
+          <h2><em>Contract successfully created!</em>
+          </h2>
+        </div>
+      </form>
+    </div>
+  </div>
+
+<script src="new_contract.js"></script>
+<script data-cfasync="false" type="text/javascript" src="contract-submission-handler.js"></script>
+<script>
+  const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+
+  portfolioItems.forEach(portfolioItem => {
+    portfolioItem.addEventListener('mouseover', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.add('image-blur');
+    });
+
+    portfolioItem.addEventListener('mouseout', () => {
+      console.log(portfolioItem.childNodes[1].classList)
+      portfolioItem.childNodes[1].classList.remove('image-blur');
+    });}
+</script>
+
+  
+</body>
+</html>
+

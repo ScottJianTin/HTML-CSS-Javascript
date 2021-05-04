@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href='iconfinder_law_iconsArtboard_1_copy_9_2393042.png' rel='icon'/> 
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="current_contract_owner.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <title>SMARTRACT (Current Contract)</title>
+</head>
+<body>
+  <input type="checkbox" id="check">
+  <label for="check">
+    <i class="fas fa-bars" id="btn"></i>
+    <i class="fas fa-times" id="cancel"></i>
+  </label>
+  <div class="sidebar">
+  <header>SMARTRACT</header>
+    <ul>
+      <li><a href="main-page.html"><i class="fas fa-home"></i>Home</a></li>
+      <li><a href="new_contract.html"><i class="fas fa-plus-circle"></i>New Contract</a></li>
+      <li><a href="current_contract.html"><i class="fas fa-folder"></i>Existing Contract</a></li>
+      <li><a href="profile.html"><i class="far fa-user-circle"></i>Account</a></li>
+    </ul>
+  </div>
+  <div class="container">
+    <div class="nav-wrapper">
+      <div class="brand">
+          <b>Existing Contract (Contract Owner)</b>
+      </div>
+    </div>
+    <table>
+      <tr>
+        <th>Contract Name</th>
+        <th>Recipient Email</th>
+        <th>Start Date</th>
+        <th>Description</th>
+        <th>Cost</th>
+        <th>Status</th>
+        <th><label for="payment">Pay?</label></th>
+      </tr>
+     
+      <tr>
+        <td><br>GreenTree Complex<br></td>
+        <td><br>scotttang99@gmail.com<br></td>
+        <td><br>08/01/2021<br></td>
+        <td><br>The world first green eco-friendly shopping complex with the size of 49,000-square-foot<br></td>
+        <td><br>$12,000<br></td>
+        <td><br><select name="payment" id="payment">
+          <option value="volvo">Completed</option>
+          <option value="saab">In Progress</option>
+          <option value="mercedes">Pending</option>
+          <option value="audi">Rejected</option>
+        </select></td>
+        <td><br>  <input type="checkbox"><br></td>
+      </tr>
+      <tr>
+        <td><br>High-Speed Railway</td>
+        <td><br>ta0027in@yahoo.com</td>
+        <td><br>04/05/2021</td>
+        <td><br>This project is to build the fastest train in the world by 2030, which connects all the cities in the Singapore.The train will be 100-percent electric and will be powered entirely by renewable energy and capable of speeds up to 200 miles per hour.</td>
+        <td><br>$8,000</td>
+        <td><br><select name="payment" id="payment">
+          <option value="volvo">Completed</option>
+          <option value="saab">In Progress</option>
+          <option value="mercedes">Pending</option>
+          <option value="audi">Rejected</option>
+        </select></td>
+        <td><br>  <input type="checkbox"><br></td>
+      </tr>
+    </table>
+    <div class="field btns">
+      <button class="submit"onclick="window.location.href ='payment.html';">Proceed to Payment</a></button>
+    </div>
+  </div>
+</body>
+</html>
